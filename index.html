@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!-- font -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.23/moment-timezone-with-data-2012-2022.min.js"></script>
 
 	<link href="css/jquery.mmenu.all.css" type="text/css" rel="stylesheet"/>
 
@@ -249,7 +252,7 @@
 					<ul>
 						`;
 						$.each(f.shifts, function(ler, learnObj) {
-							boxData += `<li>`+ learnObj.startDate +`</li>
+							boxData += `<li>`+ moment(learnObj.startDate).tz("America/Los_Angeles").format('ddd, MMM D hh:mm A zz') +`</li>
 							`;
 					});
 
