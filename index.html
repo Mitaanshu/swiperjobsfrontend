@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link href="css/jquery.mmenu.all.css" type="text/css" rel="stylesheet"/>
+
+	<!-- vertical.news.slider -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+
+</head>
+<body>
+
+<header class="container-fluid mainheader">
+	<div class="row">
+		<div class="container">
+			<div class="menu-icon text-right">
+				<a href="#menu">
+					<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="container-fluid">
+	<div class="row">
+		<div class="clearfix jobsavailable-header">
+			<div class="container">
+				<h3>Jobs Available</h3>
+			</div>
+		</div>
+		<div class="container">
+			<div class="jobs-moduels"></div>
+			
+		</div>
+	</div>
+</section>
+
+
+<nav id="menu">
+	<ul>
+		<li>
+			<a href="#">Create Master</a>
+		</li>
+		<li>
+			<a href="#">Case List</a>
+		</li>
+		<li>
+			<a href="#">Login</a>
+		</li>
+	</ul>
+</nav>
+
+
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.mmenu.all.min.js"></script>
+
+
+<script>
+    // json data
+    $(function() {
+
+		data = {
+  "paths": [
+    {
+      "jobId": "5775d8e18a488e6c5bb08c13",
+      "title": "Construction and Releated Workers - General",
+      "company": [
+        {
+          "name": "C.D. Barnes and Associates",
+          "address": "123 Main Street, Tacoma, WA 98409",
+          "logo": "images/testimonial-4.jpg",
+          "reportTo": "Joe Blogs"
+        }        
+      ],
+      "wagePerHourInCents": "850",
+      "shifts": [
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        }
+      ],
+      "branch": "Tacoma",
+      "branchPhoneNumber": "253"
+    },
+    {
+      "jobId": "5775d8e18a488e6c5bb08c13",
+      "title": "Construction and Releated Workers - General",
+      "company": [
+        {
+          "name": "C.D. Barnes and Associates",
+          "address": "123 Main Street, Tacoma, WA 98409",
+          "logo": "images/testimonial-4.jpg",
+          "reportTo": "Joe Blogs"
+        }        
+      ],
+      "wagePerHourInCents": "8.50",
+      "shifts": [
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        }
+      ],
+      "branch": "Tacoma",
+      "branchPhoneNumber": "253"
+    },
+    {
+      "jobId": "5775d8e18a488e6c5bb08c13",
+      "title": "Construction and Releated Workers - General",
+      "company": [
+        {
+          "name": "C.D. Barnes and Associates",
+          "address": "123 Main Street, Tacoma, WA 98409",
+          "logo": "images/testimonial-4.jpg",
+          "reportTo": "Joe Blogs"
+        }        
+      ],
+      "wagePerHourInCents": "8.50",
+      "shifts": [
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        },
+        {
+          "startDate": "2016-09-04T21:00:00Z",
+          "endDate": "2016-09-05T05:00:00Z"
+        }
+      ],
+      "branch": "Tacoma",
+      "branchPhoneNumber": "253"
+    }
+
+  ]
+}
+        var people = [];
+         function render(data) {
+            $.each(data.paths, function(i, f) {
+                /*<span>`+ f.time +` minutes</span>*/
+                var boxData = `<div class="jobsportal-profile">`;
+                $.each(f.company, function(ler, learnObj) {
+					boxData += `<div class="jobcandidate-profile">
+						<figure>
+							<img src="`+ learnObj.logo +`" alt="" title="" />
+						</figure>
+						<div class="jobcandidate-name">
+							<h4>`+ f.title +`</h4>
+							<h5>`+ learnObj.name +`</h5>
+							<p>$`+ f.wagePerHourInCents +` / hour</p>
+							<p><strong>Mon, Sep 5 - Fri Sep 16</strong></p>
+						</div>
+					</div>`;
+				});
+
+				 boxData += `<div class="jobstiming common-border">
+					<h4>If you take this job you are agreeing to work ALL DAYS.</h4>
+					<ul>
+						`;
+						$.each(f.shifts, function(ler, learnObj) {
+							boxData += `<li>`+ learnObj.startDate +`</li>
+							`;
+					});
+
+				 boxData += `
+							
+					</ul>
+				</div>
+				<div class="joblocation common-border">
+					<h4>Location</h4>`;
+					$.each(f.company, function(ler, learnObj) {
+						boxData += `<a href="#">`+ learnObj.address +`</a>`;
+					});
+
+				 boxData += `
+				</div>
+				<div class="joblocation common-border">
+					<h4>Branch :</h4>
+					<p>`+ f.branch +`</p>
+					<a href="#">`+ f.branchPhoneNumber +`</a>
+				</div>
+				<div class="thanks-footer clearfix">
+					<a href="#" class="pull-left">NO THANKS</a>
+					<a href="#" class="pull-right">I'LL TAKE IT</a>
+				</div>
+			</div>`;
+                $(boxData).appendTo(".jobs-moduels");
+                console.log(f);
+            });
+		};
+		render(data);
+
+	});
+	
+
+</script>
+
+<script type="text/javascript">
+   jQuery(document).ready(function( $ ) {
+      $("#menu").mmenu({
+         offCanvas: {
+         position  : "right",
+         zposition: "front"
+      	},
+      	slidingSubmenus:false,
+      });
+
+  	var api = $('#menu').data('mmenu');
+	api.bind('opening', function () {
+	    $('.menu-icon').addClass('opened');
+	});
+
+	api.bind('closing', function () {
+	    $('.menu-icon').removeClass('opened');
+	});
+
+   });
+
+</script>
+
+
+</html>

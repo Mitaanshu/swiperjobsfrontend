@@ -1,0 +1,221 @@
+*{box-sizing: border-box;font-family: 'Montserrat', sans-serif; }
+h1,h2,h3,h4,h5,h6{margin: 0; padding: 0}
+
+body{background: #d8dfe7}
+
+
+.mainheader {background: #3b4056;padding-top: 25px;padding-bottom: 25px;
+position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.mainmenu a{display: inline-block;height: 27px;}
+.mainmenu span{width: 25px;height: 3px; background: #fff; display: inline-block; position: relative;}
+.mainmenu span:after{
+    display: block;
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: -8px;
+    right: 0;
+}
+.mainmenu span:before{
+    display: block;
+    content: '';
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+}
+
+
+.jobsavailable-header{background: #4bbbeb; padding-top: 10px;padding-bottom: 10px; margin-bottom: 30px;
+
+ 
+}
+.jobsavailable-header h3{display: inline-block; font-size: 24px; color: #fff; background: #41aee6; padding: 15px 20px; border-radius: 5px;}
+
+.jobsportal-profile{background: #f8f8f8; border-radius: 5px;
+-webkit-box-shadow: 1px 3px 20px -4px rgba(0,0,0,0.18);
+-moz-box-shadow: 1px 3px 20px -4px rgba(0,0,0,0.18);
+box-shadow: 1px 3px 20px -4px rgba(0,0,0,0.18);
+padding: 15px;
+width: 48%;
+vertical-align: top;
+display: inline-block; margin: 0px 10px 20px; 
+
+}
+
+.jobcandidate-profile figure{ width: 120px; display: inline-block;  }
+.jobcandidate-profile figure img{width: 100%; height: 100%;}
+.jobcandidate-name{display: inline-block; width: calc(100% - 130px); padding-left: 10px; vertical-align: top;}
+.jobcandidate-name h4{font-size: 17px; font-weight: 600; color: #3a4056; line-height: 22px;}
+.jobcandidate-name h5{font-size: 15px; font-weight: 600; color: #a5a5a5; line-height: 22px; margin-top: 5px;}
+.jobcandidate-name p{font-size: 15px; font-weight: 500; color: #a5a5a5; line-height: 22px; margin-top: 0px; margin-bottom: 0}
+.jobcandidate-name p strong{color: #696969;}
+
+
+.jobstiming{margin-top: 15px;}
+.jobstiming h4{font-size: 17px; font-weight: 700; color: #000; line-height: 22px; margin-bottom: 10px;}
+.jobstiming ul{padding-left: 0; margin-bottom: 0}
+.jobstiming ul li{list-style: none; font-size: 15px; font-weight: 600; color: #a5a5a5; margin-bottom: 5px}
+.jobstiming ul li:last-child{margin-bottom: 0}
+
+.common-border{border-bottom: 1px solid #a5a5a5;padding-bottom: 15px; margin-bottom: 15px}
+.joblocation h4{color: #5d5d5d;font-size: 17px; font-weight: 600; margin-bottom: 5px;}
+.joblocation p{color: #a5a5a5;font-size: 15px; font-weight: 600; margin-bottom: 0px;}
+.joblocation a{transition: all .4s; -webkit-transition: all .4s; color: #4bbbeb;font-size: 17px; font-weight: 600; margin-bottom: 5px; text-decoration: underline;}
+
+.thanks-footer{ padding-top: 20px; }
+.thanks-footer a{transition: all .4s; -webkit-transition: all .4s;color: #4bbbeb;font-size: 17px; font-weight: 600; margin-bottom: 5px; text-decoration: none;}
+.thanks-footer a:hover, .joblocation a:hover{color: #3b4056}
+
+
+
+
+/*menu*/
+/*menu section*/
+
+.menu-icon{ display: block;  }
+
+
+.mm-menu {
+    background: #3b4056;
+    border-color: rgba(0,0,0,.1);
+    color: #fff;
+    padding-top: 100px;
+}
+.mm-listview>li>a, .mm-listview>li>span{padding: 15px 10px 15px 20px;}
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview{margin-top: 0}
+
+.mm-listview>li:not(.mm-divider):after{left: 0}
+
+
+
+.mm-menu.mm-offcanvas {
+    max-width: 300px;
+    box-shadow: 1px 0 10px 0px #073154;
+}
+
+
+
+.mm-listview>li, .mm-listview>li .mm-next, .mm-listview>li .mm-next:before, .mm-listview>li:after {
+    border-color: rgba(255,255,255,0.4);
+}
+
+
+
+
+.menu-icon{
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease,-webkit-transform .4s ease;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.menu-icon.opened {
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease,-webkit-transform .4s ease;
+    -webkit-transform: translate3d(-320px,0,0);
+    transform: translate3d(-320px,0,0);
+}
+
+
+.hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: -15px;
+}
+
+.hamburger-inner {
+    top: auto;
+    bottom: 0;
+    transition-duration: .15s;
+    transition-delay: .15s;
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+}
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner::before {
+    transition: top .12s .3s cubic-bezier(.33333,.66667,.66667,1),transform .15s cubic-bezier(.55,.055,.675,.19);
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after, .hamburger-inner::before {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+
+
+.hamburger-inner::after {
+    top: -20px;
+    transition: top .3s .3s cubic-bezier(.33333,.66667,.66667,1),opacity .1s linear;
+}
+
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+
+.menu-icon.opened .hamburger-inner {
+    transform: translate3d(0,-10px,0) rotate(-45deg);
+    transition-delay: .32s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+}
+
+
+.menu-icon.opened  .hamburger-inner::before {
+    top: 0;
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: top .12s .18s cubic-bezier(.33333,0,.66667,.33333),transform .15s .42s cubic-bezier(.215,.61,.355,1);
+}
+
+.menu-icon.opened .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top .3s cubic-bezier(.33333,0,.66667,.33333),opacity .1s .27s linear;
+}
+
+
